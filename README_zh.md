@@ -1,8 +1,41 @@
 [English](README.md) | **中文**
 
-# Hermes Agent 从入门到精通
+<p align="center">
+  <img src="banner.png" width="100%" />
+</p>
 
-> 橙皮书系列 · 花叔 著
+<h1 align="center">Hermes Agent 从入门到精通</h1>
+
+<p align="center">
+  <strong>橙皮书系列 · 花叔 著</strong>
+</p>
+
+<p align="center">
+  <a href="https://github.com/alchaincyf/hermes-agent-orange-book/stargazers">
+    <img alt="GitHub stars" src="https://img.shields.io/github/stars/alchaincyf/hermes-agent-orange-book?style=for-the-badge&logo=github&color=ffd700">
+  </a>
+  <a href="https://github.com/alchaincyf/hermes-agent-orange-book/network/members">
+    <img alt="GitHub forks" src="https://img.shields.io/github/forks/alchaincyf/hermes-agent-orange-book?style=for-the-badge&logo=github&color=4a90d9">
+  </a>
+  <a href="https://github.com/alchaincyf/hermes-agent-orange-book/releases">
+    <img alt="Downloads" src="https://img.shields.io/github/downloads/alchaincyf/hermes-agent-orange-book/total?style=for-the-badge&logo=github&color=brightgreen">
+  </a>
+  <a href="https://github.com/alchaincyf/hermes-agent-orange-book/blob/main/LICENSE">
+    <img alt="License" src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey?style=for-the-badge">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/alchaincyf/hermes-agent-orange-book/releases">
+    <img alt="Latest Release" src="https://img.shields.io/github/v/release/alchaincyf/hermes-agent-orange-book?style=flat-square&logo=github&label=版本">
+  </a>
+  <a href="https://hermes-agent.nousresearch.com/">
+    <img alt="Hermes Docs" src="https://img.shields.io/badge/Hermes-官方文档-blue?style=flat-square&logo=bookstack&logoColor=white">
+  </a>
+  <a href="https://space.bilibili.com/14097567/">
+    <img alt="Bilibili" src="https://img.shields.io/badge/B站-视频教程-ff69b4?style=flat-square&logo=bilibili&logoColor=white">
+  </a>
+</p>
 
 [Hermes Agent](https://github.com/NousResearch/hermes-agent) 是 [Nous Research](https://hermes-agent.nousresearch.com/) 开源的 AI Agent 框架。第一个出厂就带缰绳的 Agent，而且缰绳会自己长大。
 
@@ -69,6 +102,6 @@
 
 ## 许可
 
-本书内容采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议。
+本书内容采用 [CC BY-NC-SA 4.0](LICENSE) 许可协议。
 
 你可以自由分享和改编，但需注明出处、不可用于商业用途、且衍生作品需使用相同许可。

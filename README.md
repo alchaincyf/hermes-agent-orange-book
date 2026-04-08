@@ -4,9 +4,38 @@
   <img src="banner.png" width="100%" />
 </p>
 
-# Hermes Agent: The Complete Guide
+<h1 align="center">Hermes Agent: The Complete Guide</h1>
 
-> 橙皮书 (Orange Book) Series · by HuaShu (花叔)
+<p align="center">
+  <strong>橙皮书 (Orange Book) Series · by HuaShu (花叔)</strong>
+</p>
+
+<p align="center">
+  <a href="https://github.com/alchaincyf/hermes-agent-orange-book/stargazers">
+    <img alt="GitHub stars" src="https://img.shields.io/github/stars/alchaincyf/hermes-agent-orange-book?style=for-the-badge&logo=github&color=ffd700">
+  </a>
+  <a href="https://github.com/alchaincyf/hermes-agent-orange-book/network/members">
+    <img alt="GitHub forks" src="https://img.shields.io/github/forks/alchaincyf/hermes-agent-orange-book?style=for-the-badge&logo=github&color=4a90d9">
+  </a>
+  <a href="https://github.com/alchaincyf/hermes-agent-orange-book/releases">
+    <img alt="Downloads" src="https://img.shields.io/github/downloads/alchaincyf/hermes-agent-orange-book/total?style=for-the-badge&logo=github&color=brightgreen">
+  </a>
+  <a href="https://github.com/alchaincyf/hermes-agent-orange-book/blob/main/LICENSE">
+    <img alt="License" src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey?style=for-the-badge">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/alchaincyf/hermes-agent-orange-book/releases">
+    <img alt="Latest Release" src="https://img.shields.io/github/v/release/alchaincyf/hermes-agent-orange-book?style=flat-square&logo=github&label=version">
+  </a>
+  <a href="https://hermes-agent.nousresearch.com/">
+    <img alt="Hermes Docs" src="https://img.shields.io/badge/Hermes-Docs-blue?style=flat-square&logo=bookstack&logoColor=white">
+  </a>
+  <a href="https://space.bilibili.com/14097567/">
+    <img alt="Bilibili" src="https://img.shields.io/badge/Bilibili-视频教程-ff69b4?style=flat-square&logo=bilibili&logoColor=white">
+  </a>
+</p>
 
 A practical guide to [Hermes Agent](https://github.com/NousResearch/hermes-agent), the open-source AI Agent framework by [Nous Research](https://hermes-agent.nousresearch.com/). The first Agent that ships with reins built in — and the reins keep growing.
 
@@ -69,9 +98,9 @@ An AI content creator with 300K+ followers across platforms. Built all products 
 
 ## Version
 
-- **v260408** — First edition, based on Hermes Agent v0.7.0
+- **v260407** — First edition, based on Hermes Agent v0.7.0
 - AI tools evolve rapidly — refer to [official docs](https://hermes-agent.nousresearch.com/docs/) for the latest
 
 ## License
 
-[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — free to share and adapt with attribution, non-commercial only.
+[CC BY-NC-SA 4.0](LICENSE) — free to share and adapt with attribution, non-commercial only.

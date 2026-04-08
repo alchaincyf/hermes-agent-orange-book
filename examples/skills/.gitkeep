@@ -1,0 +1,11 @@
+# Skills 示例目录
+# 将此目录复制到 ~/.hermes/skills/ 或添加到 config.yaml 的 skills.external_dirs
+
+skills/
+├── my-first-skill/
+│   └── SKILL.md        # 技能定义文件
+├── team-workflow/
+│   ├── SKILL.md
+│   └── templates/      # 模板文件
+│   └── scripts/        # 执行脚本
+└── ...

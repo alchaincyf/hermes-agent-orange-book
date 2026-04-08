@@ -1,71 +1,75 @@
-# Hermes Agent 从入门到精通
+**English** | [中文](README_zh.md)
 
-> 橙皮书系列 · 花叔 著
+# Hermes Agent: The Complete Guide
 
-[Hermes Agent](https://github.com/NousResearch/hermes-agent) 是 [Nous Research](https://hermes-agent.nousresearch.com/) 开源的 AI Agent 框架。第一个出厂就带缰绳的 Agent，而且缰绳会自己长大。
+> Orange Book Series · by HuaShu
+
+A practical guide to [Hermes Agent](https://github.com/NousResearch/hermes-agent), the open-source AI Agent framework by [Nous Research](https://hermes-agent.nousresearch.com/). The first Agent that ships with reins built in — and the reins keep growing.
 
 <p align="center">
   <img src="screenshots/page-cover.png" width="45%" />
   <img src="screenshots/page-toc.png" width="45%" />
 </p>
 
-## 下载
+## Download
 
-**[PDF 下载](https://pub-161ae4b5ed0644c4a43b5c6412287e03.r2.dev/latest/hermes-agent.pdf)**
+| Language | PDF |
+|----------|-----|
+| Chinese | **[PDF Download](https://pub-161ae4b5ed0644c4a43b5c6412287e03.r2.dev/latest/hermes-agent.pdf)** |
+| English | **[PDF Download](https://pub-161ae4b5ed0644c4a43b5c6412287e03.r2.dev/latest/hermes-agent-en.pdf)** |
 
-也可以在 [Releases](https://github.com/alchaincyf/hermes-agent-orange-book/releases) 页面下载。
+Also available on the [Releases](https://github.com/alchaincyf/hermes-agent-orange-book/releases) page.
 
-## 这本书讲什么
+## What This Book Covers
 
-[Hermes Agent](https://github.com/NousResearch/hermes-agent) 是 Nous Research 在 2026 年 2 月发布的开源 AI Agent 框架。它和 OpenClaw、Claude Code 走的路线不同：内建了自改进学习循环、三层记忆系统、Skill 自动创建和进化机制。
+[Hermes Agent](https://github.com/NousResearch/hermes-agent) is an open-source AI Agent framework released by Nous Research in February 2026. Unlike OpenClaw and Claude Code, it takes a fundamentally different approach: a built-in self-improving learning loop, three-layer memory system, and automatic Skill creation and evolution.
 
-如果你读过《Harness Engineering》橙皮书，Hermes 是那本书讲的五个组件（指令/约束/反馈/记忆/编排）的第一次产品化实现。
+If you've read the "Harness Engineering" Orange Book, Hermes is the first productization of those five components (instructions / constraints / feedback / memory / orchestration).
 
-本书 17 章，分 5 个部分：
+17 chapters across 5 parts:
 
-| Part | 内容 | 章节 |
-|------|------|------|
-| 概念 | 从 Harness 到 Hermes，消除焦虑 | §01-02 |
-| 核心机制 | 学习循环、记忆、Skill、工具生态 | §03-06 |
-| 动手搭建 | 安装、首次对话、多平台、自定义 | §07-11 |
-| 实战场景 | 知识助手、开发、创作、多 Agent | §12-15 |
-| 深度思考 | 三者对比、自改进边界 | §16-17 |
+| Part | Content | Chapters |
+|------|---------|----------|
+| Concepts | From Harness to Hermes | §01-02 |
+| Core Mechanisms | Learning loop, memory, Skills, tool ecosystem | §03-06 |
+| Hands-On Setup | Installation, first conversation, multi-platform, customization | §07-11 |
+| Real-World Scenarios | Knowledge assistant, dev automation, content creation, multi-Agent | §12-15 |
+| Deep Thinking | Three-way comparison, boundaries of self-improving Agents | §16-17 |
 
 <p align="center">
   <img src="screenshots/page-ch01.png" width="45%" />
   <img src="screenshots/page-ch03.png" width="45%" />
 </p>
 
-## 适合谁读
+## Who Is This For
 
-- 用过 Claude Code / OpenClaw / Cursor，想了解 Hermes 的开发者
-- 想搭建个人 AI Agent 的 AI 爱好者
-- 对 Harness Engineering 概念感兴趣，想看产品化实现的人
+- Developers who've used Claude Code / OpenClaw / Cursor and want to understand Hermes
+- AI enthusiasts who want to build a personal AI Agent
+- Anyone interested in seeing Harness Engineering concepts turned into a real product
 
-## 橙皮书系列
+## Orange Book Series
 
-本书是橙皮书系列之一。系列其他书目包括：Claude Code 从入门到精通、Harness Engineering、OpenClaw 等。
+This is part of the Orange Book series, which also includes: Claude Code: The Complete Guide, Harness Engineering, OpenClaw, and more.
 
-所有橙皮书免费下载：**[huasheng.ai/orange-books](https://www.huasheng.ai/orange-books)**
+All Orange Books free to download: **[huasheng.ai/orange-books](https://www.huasheng.ai/orange-books)**
 
-## 关于作者
+## About the Author
 
-**花叔** · AI Native Coder · 独立开发者
+**HuaShu** · AI Native Coder · Indie Developer
 
-- 公众号：花叔
-- B站：[AI进化论-花生](https://space.bilibili.com/14097567/)
-- X/Twitter：[@AlchainHust](https://x.com/AlchainHust)
-- YouTube：[@Alchain](https://www.youtube.com/@Alchain)
-- 小红书：[花叔](https://www.xiaohongshu.com/user/profile/5abc6f17e8ac2b109179dfdf)
-- 官网：[huasheng.ai](https://www.huasheng.ai/)
+- WeChat: 花叔
+- Bilibili: [AI进化论-花生](https://space.bilibili.com/14097567/)
+- X/Twitter: [@AlchainHust](https://x.com/AlchainHust)
+- YouTube: [@Alchain](https://www.youtube.com/@Alchain)
+- Website: [huasheng.ai](https://www.huasheng.ai/)
 
-## 版本
+## Version
 
-- **v260407** — 初版，基于 Hermes Agent v0.7.0
-- AI 工具迭代迅速，部分内容可能随版本更新变化，请以官方文档为准
+- **v260408** — First edition, based on Hermes Agent v0.7.0
+- AI tools evolve rapidly — some content may change with future versions. Refer to official docs for the latest.
 
-## 许可
+## License
 
-本书内容采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议。
+This work is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-你可以自由分享和改编，但需注明出处、不可用于商业用途、且衍生作品需使用相同许可。
+You are free to share and adapt, with attribution, non-commercial use only, and same license for derivatives.

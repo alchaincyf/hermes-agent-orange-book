@@ -1,0 +1,83 @@
+# Hermes Agent 开发者配置
+# 适合：代码开发、自动化任务、项目协作
+# 包含 Terminal、Browser、Skills 等完整工具链
+
+model: "anthropic/claude-sonnet-4"  # 推荐模型（可改为其他）
+toolsets:
+  - hermes-cli       # CLI 核心工具
+  - hermes-gateway   # Gateway 工具（可选）
+
+# ── Terminal 配置 ──
+terminal:
+  backend: "local"           # local | docker | ssh | modal | daytona
+  timeout: 180               # 命令超时秒数
+  persistent_shell: true     # 保持 shell 状态（cwd/env）
+  # Docker 模式额外配置（backend: docker 时启用）
+  # docker_image: "nikolaik/python-nodejs:python3.11-nodejs20"
+  # docker_mount_cwd_to_workspace: true
+  # docker_volumes: []
+
+# ── Browser 配置 ──
+browser:
+  inactivity_timeout: 120    # 浏览器空闲超时
+  command_timeout: 30        # 命令超时
+  record_sessions: false     # 是否录制视频
+  allow_private_urls: false  # 禁止访问 localhost
+
+# ── Skills 外部目录 ──
+skills:
+  external_dirs: []          # 可添加共享技能目录
+  # 例如: ["~/.agents/skills", "/shared/team-skills"]
+
+# ── 文件系统 ──
+checkpoints:
+  enabled: true
+  max_snapshots: 100         # 开发场景保留更多备份
+
+file_read_max_chars: 100000  # 单次读取最大字符
+
+# ── Agent 行为 ──
+agent:
+  max_turns: 90
+  gateway_timeout: 1800      # Gateway 模式超时（30分钟）
+  tool_use_enforcement: "auto"
+
+# ── 压缩与路由 ──
+compression:
+  enabled: true
+  threshold: 0.50            # context > 50% 时压缩
+  target_ratio: 0.20
+
+smart_model_routing:
+  enabled: false             # 可开启自动模型路由
+  max_simple_chars: 160
+
+# ── 记忆系统 ──
+memory:
+  memory_enabled: true
+  memory_char_limit: 2200    # ~800 tokens
+  user_profile_enabled: true
+  user_char_limit: 1375      # ~500 tokens
+
+# ── 辅助模型（Vision/压缩等）──
+auxiliary:
+  vision:
+    provider: "auto"
+    timeout: 30
+  web_extract:
+    provider: "auto"
+    timeout: 360
+  compression:
+    provider: "auto"
+    timeout: 120
+
+# ── 审批模式 ──
+approvals:
+  mode: "manual"             # manual | smart | off
+  timeout: 60
+
+# ── 日志 ──
+logging:
+  level: "INFO"
+  max_size_mb: 5
+  backup_count: 3

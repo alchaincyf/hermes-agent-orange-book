@@ -1,0 +1,21 @@
+# Hermes Agent 最简配置 - 入门版
+# 适合：首次安装、快速体验
+# 只需配置一个 Provider 即可开始使用
+
+# ── 核心配置 ──
+model: ""                    # 空值 = Setup Wizard 会引导你选择
+toolsets: ["hermes-cli"]     # CLI 模式最小工具集
+
+# ── Agent 行为 ──
+agent:
+  max_turns: 90              # 每次对话最多 90 轮
+
+# ── 记忆系统 ──
+memory:
+  memory_enabled: true       # 启用持久记忆
+  user_profile_enabled: true # 启用用户画像
+
+# ── 文件检查点（安全网）──
+checkpoints:
+  enabled: true              # 自动备份文件修改
+  max_snapshots: 50          # 最多保留 50 个备份点

@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📖 橙皮书下载
+    url: https://github.com/alchaincyf/hermes-agent-orange-book#download
+    about: 下载中文版和英文版 PDF
+  - name: 📚 Hermes 官方文档
+    url: https://hermes-agent.nousresearch.com/
+    about: 查阅 Hermes Agent 官方使用文档
+  - name: 💬 GitHub Discussions
+    url: https://github.com/NousResearch/hermes-agent/discussions
+    about: 参与 Hermes Agent 社区讨论
+  - name: 🎥 作者 B站频道
+    url: https://space.bilibili.com/14097567/
+    about: 观看 Hermes Agent 视频教程

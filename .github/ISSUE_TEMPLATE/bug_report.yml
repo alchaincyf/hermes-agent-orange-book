@@ -1,0 +1,56 @@
+name: Bug Report
+description: 报告书中的错误或问题
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你报告问题！请填写以下信息帮助我们定位问题。
+        
+  - type: input
+    id: chapter
+    attributes:
+      label: 章节号
+      description: 问题出现在哪个章节？例如：§03 或 §12.3
+      placeholder: "§03"
+    validations:
+      required: true
+      
+  - type: input
+    id: location
+    attributes:
+      label: 具体位置
+      description: 页码或段落位置
+      placeholder: "第 42 页，第 3 段"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: problem
+    attributes:
+      label: 问题描述
+      description: 请描述你发现的问题
+      placeholder: "原文写的是..."
+    validations:
+      required: true
+      
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 建议修改
+      description: 你认为应该如何修改？
+      placeholder: "建议改为..."
+    validations:
+      required: false
+      
+  - type: checkboxes
+    id: type
+    attributes:
+      label: 问题类型
+      options:
+        - label: 技术描述不准确
+        - label: 代码示例无法运行
+        - label: 链接失效
+        - label: 错别字/排版问题
+        - label: 其他

@@ -1,0 +1,47 @@
+name: Content Suggestion
+description: 提出内容改进或新增建议
+title: "[Suggestion] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        欢迎提出内容建议！好的建议会让橙皮书更完善。
+        
+  - type: dropdown
+    id: category
+    attributes:
+      label: 建议类型
+      options:
+        - 新增内容
+        - 内容扩展
+        - 示例补充
+        - 结构调整
+        - 其他
+    validations:
+      required: true
+      
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 建议内容
+      description: 请详细描述你的建议
+      placeholder: "建议在 §05 中补充..."
+    validations:
+      required: true
+      
+  - type: textarea
+    id: reason
+    attributes:
+      label: 建议理由
+      description: 为什么这个建议有价值？
+      placeholder: "很多读者会遇到这个问题..."
+    validations:
+      required: false
+      
+  - type: checkboxes
+    id: willing
+    attributes:
+      label: 是否愿意贡献内容？
+      options:
+        - label: 我愿意提交 PR 实现这个建议

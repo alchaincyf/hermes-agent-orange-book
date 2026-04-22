@@ -1,0 +1,30 @@
+name: Hermes Question
+description: 关于 Hermes Agent 使用的问题（非书内容问题）
+title: "[Question] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        这里的 Issue 主要针对橙皮书内容。
+        
+        如果你遇到 Hermes Agent 使用问题，建议先查阅：
+        - [官方文档](https://hermes-agent.nousresearch.com/)
+        - [GitHub Discussions](https://github.com/NousResearch/hermes-agent/discussions)
+        
+  - type: textarea
+    id: question
+    attributes:
+      label: 你的问题
+      placeholder: "我想问..."
+    validations:
+      required: true
+      
+  - type: checkboxes
+    id: checked
+    attributes:
+      label: 已查阅资源
+      options:
+        - label: 已查阅橙皮书相关章节
+        - label: 已查阅官方文档
+        - label: 已搜索 GitHub Issues

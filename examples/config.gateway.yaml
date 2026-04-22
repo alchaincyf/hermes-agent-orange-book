@@ -1,0 +1,71 @@
+# Hermes Agent Gateway 配置
+# 适合：Telegram / Discord / Slack / WhatsApp 等平台部署
+# 需在 .env 中配置对应平台的 API Key
+
+model: "anthropic/claude-sonnet-4"
+toolsets:
+  - hermes-cli
+  - hermes-gateway
+
+# ── Telegram 配置 ──
+# 需设置环境变量: TELEGRAM_BOT_TOKEN, TELEGRAM_ALLOWED_USERS
+# (此处无需额外 YAML 配置，平台认证由 .env 管理)
+
+# ── Discord 配置 ──
+discord:
+  require_mention: true          # 需要被 @ 才响应
+  free_response_channels: ""     # 允许自由响应的频道 ID
+  auto_thread: true              # 自动创建 Thread
+  reactions: true                # 处理时添加 emoji 反应
+
+# ── Slack 配置 ──
+# 需设置环境变量: SLACK_BOT_TOKEN, SLACK_APP_TOKEN
+# (Slack 默认 Thread 模式，无需 YAML 配置)
+
+# ── WhatsApp 配置 ──
+whatsapp:
+  # reply_prefix: ""  # 可自定义回复头
+
+# ── Gateway Agent 行为 ──
+agent:
+  max_turns: 90
+  gateway_timeout: 1800          # 30分钟超时
+  tool_use_enforcement: "auto"
+
+# ── Terminal（云端执行）──
+terminal:
+  backend: "local"
+  timeout: 180
+  persistent_shell: true
+
+# ── 显示配置 ──
+display:
+  tool_progress_command: false   # Gateway 端 /verbose 命令
+  tool_preview_length: 0         # 工具预览长度
+
+# ── 审批按钮（危险命令）──
+approvals:
+  mode: "manual"                 # Telegram/Slack 会显示审批按钮
+  timeout: 60
+
+# ── 安全 ──
+privacy:
+  redact_pii: false              # 可开启 PII 脱敏
+
+security:
+  redact_secrets: true
+  tirith_enabled: true
+
+# ── 定时任务 ──
+cron:
+  wrap_response: true            # 包装定时任务响应
+
+# ── 日志 ──
+logging:
+  level: "INFO"
+  max_size_mb: 5
+  backup_count: 3
+
+# ── 时区 ──
+timezone: ""                     # 空 = 服务器本地时间
+# 可设置: "Asia/Shanghai", "America/New_York"

@@ -26,6 +26,21 @@
 | 中文版 | **[PDF 下载](https://github.com/alchaincyf/hermes-agent-orange-book/raw/main/Hermes-Agent橙皮书2.0-v260607.pdf)** |
 | English | **[PDF Download](https://github.com/alchaincyf/hermes-agent-orange-book/raw/main/Hermes-Agent-The-Complete-Guide-v260607.pdf)** |
 
+## 勘误
+
+**§03「Nous为什么做这件事」里关于数据采集的推断，是错的。** 感谢 [@lishaogang](https://github.com/lishaogang) 在 [issue #7](https://github.com/alchaincyf/hermes-agent-orange-book/issues/7) 指出。
+
+书里「动机一」写道：「Hermes Agent不只是一个产品，它同时是Nous给自家模型采集真实数据的超大规模采集器」，还画了一条「用户真实使用→工具调用轨迹→压缩成训练数据→训练下一代模型」的链条。这条链在第一环就断了：
+
+- 官方 [FAQ](https://hermes-agent.nousresearch.com/docs/reference/faq) 写得很清楚：API 调用只发给你自己配置的模型提供商，Hermes Agent 不收集遥测、使用数据或分析数据，你的对话、记忆、Skill 全部存在本地`~/.hermes/`。
+- 官方 [AGENTS.md](https://github.com/NousResearch/hermes-agent/blob/main/AGENTS.md) 更进一步，把「没有用户明确 opt-in 的出站遥测/使用归因」列为「做得再好也拒收」的贡献——想给 Hermes 加数据上报的代码，官方自己都不让进。
+
+也就是说，你的使用轨迹留在你自己的电脑上，没有任何通道回流给 Nous。书里提到的 batch_runner.py、trajectory_compressor.py 和「Research-ready」都真实存在，但那是 Nous 和研究者在自己环境里批量生成训练轨迹用的研究设施，不是从用户那里收数据的管道。我当时把「它有生产轨迹的设施」推成了「它在收你的轨迹」，这一步推过头了。虽然原文标注了「这是推断，不是官方表述」，但一个被官方文档直接否定的推断，标注了也还是错的。
+
+连带地，§03 结尾「数据飞轮」那部分论证也不成立——Nous 做 Hermes 的动机里，「Portal 商业化」和「抢 OpenClaw 的存量用户」两条依然成立，「用户给它喂训练数据」这条应当删去。
+
+PDF 是构建产物，暂未重新生成，先在这里记下勘误，下一版修订时改正正文。判断产品事实，请以[官方文档](https://hermes-agent.nousresearch.com/docs/)为准。
+
 ## 这本书讲什么
 
 [Hermes Agent](https://github.com/NousResearch/hermes-agent) 是 Nous Research 开源的 AI Agent 框架。它和 OpenClaw、Claude Code 走的路线不同：内建了自改进学习循环、三层记忆系统、Skill 自动创建和进化机制，这一版还多了持久化的多 Agent 看板平台 Kanban，和一套诚实的、以操作系统为边界的安全模型。

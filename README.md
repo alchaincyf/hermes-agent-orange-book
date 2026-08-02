@@ -26,6 +26,21 @@ A hands-on guide to [Hermes Agent](https://github.com/NousResearch/hermes-agent)
 | 中文版 (Chinese) | **[PDF Download](https://github.com/alchaincyf/hermes-agent-orange-book/raw/main/Hermes-Agent橙皮书2.0-v260607.pdf)** |
 | English | **[PDF Download](https://github.com/alchaincyf/hermes-agent-orange-book/raw/main/Hermes-Agent-The-Complete-Guide-v260607.pdf)** |
 
+## Errata
+
+**The data-collection inference in §03 ("Why Nous Built It") is wrong.** Thanks to [@lishaogang](https://github.com/lishaogang) for pointing this out in [issue #7](https://github.com/alchaincyf/hermes-agent-orange-book/issues/7).
+
+Under "Motive one," the book claims that "Hermes Agent isn't just a product, it's also a massive-scale harvester that collects real-world data for Nous's own models," and draws a chain from "users' real usage → tool-call trajectories → compressed into training data → next-gen models." That chain breaks at its very first link:
+
+- The official [FAQ](https://hermes-agent.nousresearch.com/docs/reference/faq) states plainly: API calls go only to the LLM provider you configure; Hermes Agent does not collect telemetry, usage data, or analytics; your conversations, memory, and skills are stored locally in `~/.hermes/`.
+- The official [AGENTS.md](https://github.com/NousResearch/hermes-agent/blob/main/AGENTS.md) goes further, listing "outbound telemetry / usage attribution without opt-in gating" as a contribution that gets "rejected even when well-built" — code that would report data home is refused by the project itself.
+
+In other words, your usage trajectories stay on your own machine; there is no channel feeding them back to Nous. The things the book cites — batch_runner.py, trajectory_compressor.py, the "Research-ready" section — are all real, but they are research infrastructure for Nous and researchers to batch-generate trajectories in their own environments, not a pipeline collecting data from users. I stretched "they have trajectory-generating infrastructure" into "they are harvesting your trajectories," and that step went too far. The original text did flag it as "my inference, not an official Nous statement" — but an inference directly contradicted by the official docs is still wrong, flag or no flag.
+
+Accordingly, the "data flywheel" argument at the end of §03 doesn't hold either. Of the motives the book attributes to Nous, "monetizing through Portal" and "poaching OpenClaw's users" still stand; "users feeding it training data" should be struck.
+
+The PDFs are build artifacts and have not been regenerated yet; this erratum stands here until the next revision corrects the body text. For product facts, trust the [official docs](https://hermes-agent.nousresearch.com/docs/).
+
 ## What This Book Covers
 
 [Hermes Agent](https://github.com/NousResearch/hermes-agent) is an open-source AI Agent framework from Nous Research. Unlike OpenClaw and Claude Code, it takes a fundamentally different approach: a built-in self-improving learning loop, a three-layer memory system, automatic Skill creation and evolution, and — new this cycle — a persistent multi-agent Kanban platform and an honest, OS-level security model.

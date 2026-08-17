@@ -83,6 +83,13 @@ An AI content creator with 300K+ followers across platforms. Built all products 
 - **Full rewrite, not a patch.** Restructured from 17 chapters / 5 parts into 21 sections / 6 parts, rebuilt around Hermes v0.16.0. New material on the self-improvement loop (Curator), the multi-agent Kanban platform, and the security model — areas the first edition barely touched.
 - **License changed to MIT.** The first edition used CC BY-NC-SA 4.0. Starting with 2.0, this book is released under the [MIT License](LICENSE) — you're free to use, adapt, and redistribute it, including commercially. Use it however helps you.
 
+## 📚 Read Online on WorkBuddy
+
+This book is also available on WorkBuddy's knowledge base, one page per chapter — or just drop the link into your agent as context.
+
+https://www.workbuddy.cn/space/d/qAVr77wMMaD1
+
+All orange books: https://www.workbuddy.cn/space/d/YcllWXknAUoMk6lFSWdfbI
 ## License
 
 [MIT License](LICENSE) — free to use, copy, modify, and distribute, including for commercial use. Attribution appreciated but not required.

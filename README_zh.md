@@ -84,6 +84,13 @@
 - **推倒重写，不是打补丁。** 从初版的 17 章 / 5 部分，重构为 21 节 / 6 部分，围绕 Hermes v0.16.0 重新解构。新增了自改进闭环（Curator）、多 Agent 看板平台 Kanban、安全模型这些初版几乎没碰的内容。
 - **许可证改为 MIT。** 初版用的是 CC BY-NC-SA 4.0。从 2.0 起，本书改用 [MIT 许可证](LICENSE)——你可以自由使用、改编、再分发，包括商用。怎么用得上就怎么用。
 
+## 📚 在线阅读（WorkBuddy）
+
+本书已同步到 WorkBuddy 资料库：每章一个网页，也可以直接把链接丢给你的 Agent 当上下文。
+
+https://www.workbuddy.cn/space/d/qAVr77wMMaD1
+
+全部橙皮书入口：https://www.workbuddy.cn/space/d/YcllWXknAUoMk6lFSWdfbI
 ## 许可
 
 [MIT 许可证](LICENSE)——可自由使用、复制、修改和分发，包括商用。注明出处更好，但不强制。

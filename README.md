@@ -87,7 +87,7 @@ An AI content creator with 300K+ followers across platforms. Built all products 
 
 This book is also available on WorkBuddy's knowledge base, one page per chapter — or just drop the link into your agent as context.
 
-https://www.workbuddy.cn/space/d/qAVr77wMMaD1
+https://www.workbuddy.cn/space/d/qAVr77wMMaD1AmkPtmL501
 
 All orange books: https://www.workbuddy.cn/space/d/YcllWXknAUoMk6lFSWdfbI
 ## License

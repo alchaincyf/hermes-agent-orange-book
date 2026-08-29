@@ -58,6 +58,21 @@ PDF 是构建产物，暂未重新生成，先在这里记下勘误，下一版�
 | 5. 多 Agent 与编排 | 从 delegate_task 到 Kanban 平台、八种协作模式 | §15-17 |
 | 6. 部署、安全与边界 | 部署、唯一边界是操作系统、Promptware 防御、能走多远 | §18-21 |
 
+## 可选的 X/Twitter 插件
+
+实践第 4 部分时，可以用 [Hermes Tweet](https://github.com/Xquik-dev/hermes-tweet) 添加 X/Twitter 搜索和监控。安装并启用 Hermes Agent 插件：
+
+```bash
+hermes plugins install Xquik-dev/hermes-tweet --enable
+export XQUIK_API_KEY="xq_..."
+```
+
+设置密钥后重启 Hermes。先用 `tweet_explore` 查找当前路由，再用 `tweet_read` 调用返回的路由。
+
+私有读取和 X 操作使用 `tweet_action`。只有设置 `HERMES_TWEET_ENABLE_ACTIONS=true` 后才会启用。启用前请检查每项操作。
+
+Xquik is an independent third-party service. Not affiliated with X Corp. "Twitter" and "X" are trademarks of X Corp.
+
 <p align="center">
   <img src="screenshots/page-ch01.png" width="45%" />
   <img src="screenshots/page-ch03.png" width="45%" />

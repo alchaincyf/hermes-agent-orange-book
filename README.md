@@ -58,6 +58,21 @@ If you've read the "Harness Engineering" 橙皮书, Hermes is the productization
 | 5. Multi-Agent & Orchestration | From delegate_task to the Kanban platform, collaboration patterns | §15-17 |
 | 6. Deployment, Security & Boundaries | Deploy, the OS boundary, Promptware defense, how far it can go | §18-21 |
 
+## Optional X/Twitter Plugin
+
+Part 4 readers can add X/Twitter search and monitoring with [Hermes Tweet](https://github.com/Xquik-dev/hermes-tweet). Install and enable the Hermes Agent plugin:
+
+```bash
+hermes plugins install Xquik-dev/hermes-tweet --enable
+export XQUIK_API_KEY="xq_..."
+```
+
+Restart Hermes after setting the key. Use `tweet_explore` first, then call a listed route with `tweet_read`.
+
+Private reads and X actions use `tweet_action`. It stays disabled unless you set `HERMES_TWEET_ENABLE_ACTIONS=true`. Review every action before enabling it.
+
+Xquik is an independent third-party service. Not affiliated with X Corp. "Twitter" and "X" are trademarks of X Corp.
+
 <p align="center">
   <img src="screenshots/page-ch01.png" width="45%" />
   <img src="screenshots/page-ch03.png" width="45%" />
